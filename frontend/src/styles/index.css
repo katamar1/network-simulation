@@ -1,3 +1,43 @@
+.app {
+    text-align: center;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    color: #111827;
+}
+
+header {
+    background-color: #3b0764;
+    color: white;
+    padding: 1rem;
+}
+
+.zones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.zone {
+    background: white;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.status-ok {
+    border: 3px solid #22c55e;
+}
+.status-degraded {
+    border: 3px solid #facc15;
+}
+.status-risk {
+    border: 3px solid #ef4444;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

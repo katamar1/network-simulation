@@ -42,3 +42,32 @@ gets live data every few seconds
 # index.css
 custom animations + making it look cool
 
+# What the backend will send
+
+[
+{
+"zone": "A",
+"status": "OK",                // OK | DEGRADED | AT_RISK
+"latency": 132,                // ms
+"download": 85,                // Mbps
+"upload": 8,                   // Mbps
+"packetLoss": 0.3,             // %
+"predictedOutageRisk": 0.45    // 0–1.5 scale (you can map to color)
+},
+...
+]
+
+# what the frontend sends to the backend
+
+[
+{
+"zone": "A",
+"infraScore": 0.7,
+"vulnerabilityScore": 0.3,
+"distanceToStorm": 10
+},
+{
+"zone": "B",
+"infraScore": 0.5
+}
+]

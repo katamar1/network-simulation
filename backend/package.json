@@ -10,5 +10,9 @@
     "type": "git",
     "url": "https://github.com/katamar1/network-simulation.git"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
 }
